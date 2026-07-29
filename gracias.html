@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="es-UY">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gracias | Friedman</title>
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#115341">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="thanks-page" data-page="thanks">
+  <main class="thanks-shell">
+    <section class="thanks-panel thanks-panel--message">
+      <a href="index.html" class="thanks-logo" aria-label="Volver al inicio">
+        <img src="assets/friedman-80-claro.svg" alt="Friedman 80 años">
+      </a>
+
+      <div class="thanks-content">
+        <div class="success-mark"><i class="fa-solid fa-check"></i></div>
+        <span class="mini-label">Consulta registrada</span>
+        <h1>Gracias. Ya recibimos el desafío de tu empresa</h1>
+        <p class="thanks-lead" id="thanksLead">
+          Nuestro equipo revisará la información para que la conversación sea atendida por el especialista adecuado.
+        </p>
+        <p class="thanks-confirmation">Tu consulta quedó registrada.</p>
+
+        <div class="thanks-summary" id="thanksSummary" hidden>
+          <span>Resumen enviado</span>
+          <strong id="thanksCompany"></strong>
+          <p id="thanksChallenge"></p>
+        </div>
+
+        <div class="thanks-actions">
+          <a class="btn btn--primary btn--large" href="index.html#soluciones">Conocé nuestras soluciones</a>
+          <a class="btn btn--ghost btn--large" id="waManual" href="#" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i> Abrir WhatsApp
+          </a>
+        </div>
+
+        <p class="redirect-note" id="redirectNote">Abriremos WhatsApp automáticamente en un momento.</p>
+      </div>
+
+      <div class="thanks-footer">
+        <span>Friedman · Uruguay</span>
+        <a href="https://dinametra.com/" target="_blank" rel="noopener">Desarrollado por Dinametra.com</a>
+      </div>
+    </section>
+
+    <section class="thanks-panel thanks-panel--calendar">
+      <div class="calendar-shell">
+        <div class="calendar-head">
+          <span>Próximo paso</span>
+          <h2>Elegí un horario</h2>
+          <p>El embed queda listo para conectar con la URL final de Calendly.</p>
+        </div>
+
+        <div id="calendlyMount" class="calendly-mount">
+          <div class="calendar-placeholder">
+            <i class="fa-regular fa-calendar-check"></i>
+            <strong>Calendly listo para conectar</strong>
+            <p>[DATO PENDIENTE: URL DE CALENDLY]</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
