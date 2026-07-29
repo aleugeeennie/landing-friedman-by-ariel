@@ -63,7 +63,7 @@
   }
 
   function duplicateMarquees() {
-    qsa(".js-proof-track").forEach(trackEl => {
+    qsa(".js-proof-track, .js-logo-track").forEach(trackEl => {
       const original = trackEl.innerHTML;
       trackEl.insertAdjacentHTML("beforeend", original);
       if (trackEl.classList.contains("proof-track--right")) {

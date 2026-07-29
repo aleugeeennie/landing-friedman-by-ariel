@@ -138,9 +138,10 @@
             <div class="fragment fragment--d">Desarrollo</div>
             <div class="connector-lines" aria-hidden="true"></div>
             <div class="core-card">
-              <img src="assets/favicon.png" alt="" aria-hidden="true">
-              <span>Un mismo socio</span>
-              <strong>Friedman</strong>
+              <div class="core-card__content">
+                <span>Un mismo socio</span>
+                <strong>Friedman</strong>
+              </div>
             </div>
           </div>
         </div>
@@ -299,8 +300,9 @@
     </section>
 
     <section class="arrival-section">
-      <div class="arrival-image">
-        <img src="assets/friedman-detalle.webp" loading="lazy" alt="Persona revisando y firmando documentación" width="1600" height="1068">
+      <div class="arrival-image arrival-image--hero-style">
+        <img src="assets/uruguay-section-user-image.png" loading="lazy" alt="Visual fotográfico editorial de un globo terráqueo con Uruguay resaltado en verde, vinculado a operación local, payrolling e intermediación en Uruguay" width="1600" height="1600">
+        <div class="arrival-image-overlay" aria-hidden="true"></div>
       </div>
       <div class="arrival-copy reveal">
         <div class="section-kicker section-kicker--light">EMPRESAS QUE LLEGAN A URUGUAY</div>
@@ -375,7 +377,7 @@
     </section>
 
     <!-- No se inventan testimonios. Esta sección usa hechos/áreas reales hasta contar con reviews autorizadas. -->
-    <section class="proof-marquee-section" aria-label="Experiencia y capacidades de Friedman">
+    <section class="proof-marquee-section" aria-label="Prueba real y capacidades de Friedman">
       <div class="container proof-head reveal">
         <div class="section-kicker">PRUEBA QUE SÍ PODEMOS PUBLICAR</div>
         <h2>Prueba real. Sin adornos.</h2>
@@ -383,21 +385,120 @@
 
       <div class="proof-track-wrap">
         <div class="proof-track proof-track--left js-proof-track">
-          <article class="proof-card"><span>80 años</span><strong>Trayectoria local</strong></article>
-          <article class="proof-card"><span>+50.000</span><strong>Profesionales registrados</strong></article>
-          <article class="proof-card"><span>Executive</span><strong>Scouting especializado</strong></article>
-          <article class="proof-card"><span>Payroll</span><strong>Administración de nómina</strong></article>
-          <article class="proof-card"><span>Uruguay</span><strong>Contexto laboral local</strong></article>
+          <article class="proof-card">
+            <div class="proof-icon"><i class="fa-solid fa-users"></i></div>
+            <span>+50.000</span><strong>Profesionales registrados</strong>
+          </article>
+          <article class="proof-card">
+            <div class="proof-icon"><i class="fa-solid fa-binoculars"></i></div>
+            <span>Executive</span><strong>Scouting especializado</strong>
+          </article>
+          <article class="proof-card">
+            <div class="proof-icon"><i class="fa-solid fa-file-invoice-dollar"></i></div>
+            <span>Payroll</span><strong>Administración de nómina</strong>
+          </article>
+          <article class="proof-card">
+            <div class="proof-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <span>Uruguay</span><strong>Contexto laboral local</strong>
+          </article>
+          <article class="proof-card">
+            <div class="proof-icon"><i class="fa-solid fa-medal"></i></div>
+            <span>80 años</span><strong>Trayectoria local</strong>
+          </article>
         </div>
       </div>
 
       <div class="proof-track-wrap">
         <div class="proof-track proof-track--right js-proof-track">
-          <article class="proof-card"><span>Agro</span><strong>Experiencia sectorial</strong></article>
-          <article class="proof-card"><span>Construcción</span><strong>Perfiles especializados</strong></article>
-          <article class="proof-card"><span>Manufactura</span><strong>Operación y talento</strong></article>
-          <article class="proof-card"><span>Tecnología</span><strong>Perfiles de alta demanda</strong></article>
-          <article class="proof-card"><span>DO</span><strong>Desarrollo organizacional</strong></article>
+          <article class="proof-card">
+            <div class="proof-icon"><i class="fa-solid fa-seedling"></i></div>
+            <span>Agro</span><strong>Experiencia sectorial</strong>
+          </article>
+          <article class="proof-card">
+            <div class="proof-icon"><i class="fa-solid fa-helmet-safety"></i></div>
+            <span>Construcción</span><strong>Perfiles especializados</strong>
+          </article>
+          <article class="proof-card">
+            <div class="proof-icon"><i class="fa-solid fa-industry"></i></div>
+            <span>Manufactura</span><strong>Operación y talento</strong>
+          </article>
+          <article class="proof-card">
+            <div class="proof-icon"><i class="fa-solid fa-microchip"></i></div>
+            <span>Tecnología</span><strong>Perfiles de alta demanda</strong>
+          </article>
+          <article class="proof-card">
+            <div class="proof-icon"><i class="fa-solid fa-chart-line"></i></div>
+            <span>DO</span><strong>Desarrollo organizacional</strong>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section testimonials-section" id="reviews">
+      <div class="container">
+        <div class="center-head reveal">
+          <div class="section-kicker">TESTIMONIOS</div>
+          <h2>Así se verá la prueba social</h2>
+          <p>Por esta etapa del proyecto no se inventan testimonios. La sección queda visualmente resuelta y lista para sustituirse por comentarios reales autorizados.</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <article class="testimonial-card reveal">
+            <div class="testimonial-top">
+              <div class="testimonial-avatar">01</div>
+              <div class="testimonial-meta">
+                <strong>Empresa cliente</strong>
+                <span>Testimonio real por cargar</span>
+              </div>
+              <div class="testimonial-stars" aria-label="5 estrellas">★★★★★</div>
+            </div>
+            <p>Espacio ideal para una cita breve sobre rapidez del proceso, calidad de los perfiles presentados o claridad del acompañamiento consultivo.</p>
+          </article>
+
+          <article class="testimonial-card reveal">
+            <div class="testimonial-top">
+              <div class="testimonial-avatar">02</div>
+              <div class="testimonial-meta">
+                <strong>Empresa cliente</strong>
+                <span>Testimonio real por cargar</span>
+              </div>
+              <div class="testimonial-stars" aria-label="5 estrellas">★★★★★</div>
+            </div>
+            <p>Espacio ideal para una cita breve sobre ahorro operativo, simplificación de nómina o soporte en una necesidad puntual de talento.</p>
+          </article>
+
+          <article class="testimonial-card reveal">
+            <div class="testimonial-top">
+              <div class="testimonial-avatar">03</div>
+              <div class="testimonial-meta">
+                <strong>Empresa cliente</strong>
+                <span>Testimonio real por cargar</span>
+              </div>
+              <div class="testimonial-stars" aria-label="5 estrellas">★★★★★</div>
+            </div>
+            <p>Espacio ideal para una cita breve sobre conocimiento del mercado uruguayo, flexibilidad del servicio o continuidad de la relación con Friedman.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="logo-carousel-section" aria-label="Carrusel de logotipos de clientes">
+      <div class="container logo-head reveal">
+        <div class="section-kicker">CLIENTES</div>
+        <h2>Sección lista para logos autorizados</h2>
+        <p>El carrusel ya quedó armado. Solo reemplaza estos placeholders por logotipos reales autorizados.</p>
+      </div>
+
+      <div class="logo-track-wrap">
+        <div class="logo-track js-logo-track">
+          <div class="logo-chip"><span>LOGO CLIENTE 01</span></div>
+          <div class="logo-chip"><span>LOGO CLIENTE 02</span></div>
+          <div class="logo-chip"><span>LOGO CLIENTE 03</span></div>
+          <div class="logo-chip"><span>LOGO CLIENTE 04</span></div>
+          <div class="logo-chip"><span>LOGO CLIENTE 05</span></div>
+          <div class="logo-chip"><span>LOGO CLIENTE 06</span></div>
+          <div class="logo-chip"><span>LOGO CLIENTE 07</span></div>
+          <div class="logo-chip"><span>LOGO CLIENTE 08</span></div>
         </div>
       </div>
     </section>
