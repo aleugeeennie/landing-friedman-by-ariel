@@ -1139,3 +1139,67 @@ p{color:var(--muted)}
   object-position:30% center;
   filter:none;
 }
+
+
+/* ==========================================================
+   V9 - Copy validation, real-photo avatars and responsive QA
+   ========================================================== */
+html,body{max-width:100%;overflow-x:hidden}
+img{max-width:100%}
+
+.testimonial-avatar{overflow:hidden;background:#e8f2ec}
+.testimonial-avatar img{width:100%;height:100%;object-fit:cover;display:block}
+.testimonial-card p strong{color:var(--green-dark)}
+.proof-disclaimer{
+  max-width:820px;margin:24px auto 0;text-align:center;color:#74807b;
+  font-size:.68rem;line-height:1.55
+}
+.logo-chip{
+  grid-template-columns:auto auto;gap:13px;padding:0 26px;
+  align-content:center;justify-content:center
+}
+.logo-chip i{font-size:1.35rem;color:var(--green-dark)}
+.logo-chip span{letter-spacing:.11em}
+
+.lead-modal{max-height:calc(100svh - 28px);overflow-y:auto;overscroll-behavior:contain}
+.modal-backdrop{overflow:hidden}
+
+@media (max-width:720px){
+  .center-head,.logo-head{margin-bottom:36px}
+  .center-head p,.logo-head p{font-size:.9rem;line-height:1.65}
+  .testimonial-card{min-height:auto;padding:21px}
+  .testimonial-top{gap:12px;margin-bottom:15px}
+  .testimonial-avatar{width:50px;height:50px}
+  .testimonial-stars{padding-left:62px}
+  .logo-carousel-section{padding:76px 0 82px}
+  .logo-chip{min-width:190px;height:82px;padding:0 20px}
+  .lead-modal{max-height:calc(100svh - 14px)}
+}
+
+@media (max-width:430px){
+  .testimonial-top{grid-template-columns:auto 1fr}
+  .testimonial-meta strong{font-size:.88rem}
+  .testimonial-meta span{font-size:.72rem}
+  .testimonial-stars{grid-column:1/-1;padding-left:62px;font-size:.74rem}
+  .testimonial-card p{font-size:.88rem;line-height:1.7}
+  .logo-chip{min-width:174px;height:78px;padding:0 17px}
+  .logo-chip span{font-size:.76rem}
+  .logo-chip i{font-size:1.15rem}
+  .proof-disclaimer{font-size:.62rem;padding-inline:8px}
+}
+
+@media (max-width:360px){
+  .hero h1{font-size:clamp(2.35rem,12vw,3.15rem)}
+  .btn{padding-inline:17px}
+  .trust-grid article{padding-inline:13px}
+  .modal-head h2{font-size:1.52rem}
+  .modal-head p{font-size:.66rem}
+  .field input,.field select{font-size:.72rem}
+}
+
+@media (max-height:700px) and (max-width:880px){
+  .modal-backdrop{align-items:start;padding-top:7px;padding-bottom:7px}
+  .lead-modal{max-height:calc(100svh - 14px)}
+  .modal-head h2{font-size:1.6rem}
+  .modal-head p{display:none}
+}

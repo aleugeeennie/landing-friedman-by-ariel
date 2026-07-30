@@ -8,7 +8,7 @@
   // Calendly URL is still pending confirmation.
   // ------------------------------------------------------------
   const WHATSAPP_NUMBER = "59894691874";
-  const CALENDLY_URL = ""; // [DATO PENDIENTE: URL DE CALENDLY]
+  const CALENDLY_URL = ""; // Agregar aquí la URL de agenda cuando esté disponible
 
   const qs = (s, ctx = document) => ctx.querySelector(s);
   const qsa = (s, ctx = document) => [...ctx.querySelectorAll(s)];
@@ -173,7 +173,7 @@
         desafio: data.desafio || ""
       });
 
-      window.location.href = `Gracias.html?${params.toString()}`;
+      window.location.href = `gracias.html?${params.toString()}`;
     });
 
     // Auto-opens whenever the user reaches the real end of the page.
