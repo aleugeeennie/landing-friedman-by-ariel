@@ -963,13 +963,15 @@ p{color:var(--muted)}
   display:grid;
   place-items:center;
   box-shadow:0 14px 34px rgba(17,83,65,.05);
+  padding:16px 28px;
 }
-.logo-chip span{
-  color:#6e7673;
-  font-weight:800;
-  letter-spacing:.2em;
-  font-size:.86rem;
-  text-transform:uppercase;
+.logo-chip img{
+  display:block;
+  width:100%;
+  height:100%;
+  max-width:184px;
+  max-height:62px;
+  object-fit:contain;
 }
 @keyframes logo-marquee{
   to{transform:translateX(-50%)}
@@ -1155,11 +1157,9 @@ img{max-width:100%}
   font-size:.68rem;line-height:1.55
 }
 .logo-chip{
-  grid-template-columns:auto auto;gap:13px;padding:0 26px;
+  padding:16px 28px;
   align-content:center;justify-content:center
 }
-.logo-chip i{font-size:1.35rem;color:var(--green-dark)}
-.logo-chip span{letter-spacing:.11em}
 
 .lead-modal{max-height:calc(100svh - 28px);overflow-y:auto;overscroll-behavior:contain}
 .modal-backdrop{overflow:hidden}
@@ -1172,7 +1172,9 @@ img{max-width:100%}
   .testimonial-avatar{width:50px;height:50px}
   .testimonial-stars{padding-left:62px}
   .logo-carousel-section{padding:76px 0 82px}
-  .logo-chip{min-width:190px;height:82px;padding:0 20px}
+  .logo-track{gap:14px;animation-duration:26s}
+  .logo-chip{min-width:184px;height:82px;padding:14px 20px}
+  .logo-chip img{max-width:144px;max-height:54px}
   .lead-modal{max-height:calc(100svh - 14px)}
 }
 
@@ -1182,9 +1184,8 @@ img{max-width:100%}
   .testimonial-meta span{font-size:.72rem}
   .testimonial-stars{grid-column:1/-1;padding-left:62px;font-size:.74rem}
   .testimonial-card p{font-size:.88rem;line-height:1.7}
-  .logo-chip{min-width:174px;height:78px;padding:0 17px}
-  .logo-chip span{font-size:.76rem}
-  .logo-chip i{font-size:1.15rem}
+  .logo-chip{min-width:166px;height:76px;padding:13px 18px;border-radius:16px}
+  .logo-chip img{max-width:130px;max-height:50px}
   .proof-disclaimer{font-size:.62rem;padding-inline:8px}
 }
 
