@@ -250,7 +250,7 @@
       } catch (err) {
         qs("#redirectNote").textContent = "Si WhatsApp no se abrió, usá el botón de respaldo.";
       }
-    }, 1800);
+    }, 3000);
   }
 
   initNav();
